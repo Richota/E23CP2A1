@@ -64,7 +64,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</div>
 
 	<div class="col-md-8">
@@ -113,7 +113,19 @@
 
 <script>
 	// Agregar las instrucciones JS para resolver el ejercicio aquí.
+	$("#boton").click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		if($("#camposelector").val().length > 0) {
+			alert("Hola");
+		}
+		else {
+			alert("Debe ingresar un selector jQuery!");
+		}
+	});
 </script>
+
+
 
 </body>
 </html>
